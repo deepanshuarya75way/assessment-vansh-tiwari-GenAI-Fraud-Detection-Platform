@@ -45,4 +45,10 @@ npm run build
 - To point the backend at Supabase Postgres, set `DATABASE_URL` to the Supabase connection string from the dashboard and keep `DATABASE_POOL_PRE_PING=true`.
 - The provided Supabase project URL and publishable key can be used for frontend/client integration, but the backend database connection still needs the Postgres connection string or password from Supabase.
 
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+Copyright (c) 2026 Vansh Tiwari.
+
 
