@@ -1,0 +1,44 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node.js / frontend
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# Logs and local runtime data
+*.log
+logs/
+data/logs/
+data/processed/
+data/reports/
+data/uploads/
+
+# Generated ML artifacts
+models/trained/
+models/vector_store/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

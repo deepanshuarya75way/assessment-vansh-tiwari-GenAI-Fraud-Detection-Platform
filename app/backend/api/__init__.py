@@ -1,0 +1,1 @@
+"""API dependencies and router assembly for the backend."""

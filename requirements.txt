@@ -1,0 +1,19 @@
+# Backend dependencies are intentionally not implemented in this task.
+# Add Python requirements here when the API layer is introduced.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+SQLAlchemy>=2.0
+Alembic>=1.13
+pydantic>=2.7
+pydantic-settings>=2.0
+python-jose[cryptography]>=3.3
+passlib[bcrypt]>=1.7
+email-validator>=2.1
+python-multipart>=0.0.9
+psycopg[binary]>=3.1
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+openpyxl>=3.1
+pyarrow>=16.0
+joblib>=1.4
