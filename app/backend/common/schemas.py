@@ -1,6 +1,7 @@
 from datetime import datetime
+from typing import Any
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class ORMBaseModel(BaseModel):
@@ -15,3 +16,14 @@ class TimestampedResponse(ORMBaseModel):
 
 class MessageResponse(BaseModel):
     message: str
+
+
+
+class FeedbackCreate(ORMBaseModel):
+    prediction_id: str
+    prediction_label: int = Field(..., ge=0, le=1)
+    actual_label: int = Field(..., ge=0, le=1)
+    analyst_id: str
+    features: dict[str, object]
+    class FeedbackResponse(FeedbackCreate, TimestampedResponse):
+        is_valid: bool = True
